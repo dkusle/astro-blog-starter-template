@@ -1,4 +1,4 @@
----
+﻿---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -29,8 +29,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				</p>
 
 				<div class="buttons">
-					/blogRead Stories</a>
-					/promptsCommunity Prompts</a>
+					<a href="/blog">Read Stories</a>
+					<a href="/prompts">Community Prompts</a>
 				</div>
 			</section>
 
@@ -55,7 +55,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 				<div class="feature-grid">
 					<div class="feature-card">
-						<h3>📖 Personal Stories</h3>
+						<h3>ðŸ“– Personal Stories</h3>
 						<p>
 							Real experiences from people navigating life with chronic
 							illnesses.
@@ -63,7 +63,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					</div>
 
 					<div class="feature-card">
-						<h3>💡 Community Prompts</h3>
+						<h3>ðŸ’¡ Community Prompts</h3>
 						<p>
 							Questions that inspire meaningful conversations and shared
 							reflection.
@@ -71,7 +71,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					</div>
 
 					<div class="feature-card">
-						<h3>🤝 Community Support</h3>
+						<h3>ðŸ¤ Community Support</h3>
 						<p>
 							A welcoming environment built on empathy, understanding,
 							and encouragement.
@@ -79,7 +79,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					</div>
 
 					<div class="feature-card">
-						<h3>🌱 Small Victories</h3>
+						<h3>ðŸŒ± Small Victories</h3>
 						<p>
 							Celebrating resilience, personal growth, and everyday wins.
 						</p>
@@ -220,7 +220,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		text-align: center;
 	}
 
-	@media (max-width: 768px) {
+	
+		.feature-card h3 {
+			font-size: 1.1rem;
+			margin: 0 0 0.5rem 0;
+		}
+
+@media (max-width: 768px) {
 		.hero h1 {
 			font-size: 2.5rem;
 		}
@@ -230,3 +236,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		}
 	}
 </style>
+
+
+
