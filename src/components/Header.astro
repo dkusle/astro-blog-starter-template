@@ -1,19 +1,19 @@
----
+﻿---
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
 	<nav>
 		<div class="brand">
-			/Chronically Us</a>
+			<a href="/">Chronically Us</a>
 		</div>
 
 		<div class="internal-links">
-			/Home</HeaderLink>
-			/blogStories</HeaderLink>
-			/promptsCommunity Prompts</HeaderLink>
-			/aboutAbout</HeaderLink>
-			/contactContact</HeaderLink>
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Stories</HeaderLink>
+			<HeaderLink href="/prompts">Community Prompts</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/contact">Contact</HeaderLink>
 		</div>
 	</nav>
 </header>
@@ -78,3 +78,4 @@ import HeaderLink from './HeaderLink.astro';
 		}
 	}
 </style>
+
