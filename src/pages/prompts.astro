@@ -1,0 +1,84 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Community Prompts | Chronically Us"
+			description="Conversation starters for the Chronically Us community."
+		/>
+	</head>
+
+	<body>
+		<Header />
+
+		<main>
+			<h1>Community Prompts</h1>
+
+			<p class="intro">
+				These prompts are designed to encourage reflection, storytelling,
+				and connection. There are no right or wrong answers. Share as much
+				or as little as you feel comfortable sharing.
+			</p>
+
+			<section class="prompt">
+				<h2>Prompt of the Week</h2>
+				<blockquote>
+					What is one thing you wish people understood about living with a
+					chronic illness?
+				</blockquote>
+			</section>
+
+			<section class="prompt-list">
+				<h2>More Conversation Starters</h2>
+
+				<ul>
+					<li>What helps you stay positive during difficult days?</li>
+					<li>What is a small victory you're celebrating this week?</li>
+					<li>What advice would you give your younger self?</li>
+					<li>What has surprised you most about your journey?</li>
+					<li>How do you practice self-care?</li>
+					<li>What support has made the biggest difference in your life?</li>
+					<li>What do you wish friends or family understood better?</li>
+					<li>What gives you hope?</li>
+				</ul>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	.intro {
+		font-size: 1.1rem;
+		line-height: 1.7;
+	}
+
+	.prompt {
+		margin: 3rem 0;
+		padding: 2rem;
+		background: #f8f8fc;
+		border-radius: 12px;
+	}
+
+	blockquote {
+		font-size: 1.4rem;
+		font-style: italic;
+		color: #6c63ff;
+	}
+
+	.prompt-list ul li {
+		margin-bottom: 1rem;
+	}
+</style>
